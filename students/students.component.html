@@ -1,0 +1,14 @@
+<!-- students.component.html -->
+<div>
+    <label for="rollNumberInput">Enter Roll Number:</label>
+    <input type="text" id="rollNumberInput" [value]="rollNumber" (keyup)="onInput($event)" />
+    <button (click)="getStudentInfo()">Get Student Info</button>
+  
+    <div *ngIf="studentInfo">
+      <h3>Student Information</h3>
+      <p><strong>Name:</strong> {{ studentInfo.name }}</p>
+      <p><strong>Roll Number:</strong> {{ studentInfo.rollNumber }}</p>
+      <p><strong>Class:</strong> {{ studentInfo.class }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,6 @@
+<!-- font-size.component.html -->
+<label for="fontSizeInput">Enter Font Size:</label>
+<input type="number" id="fontSizeInput" [(ngModel)]="fontSize" min="1">
+<button (click)="applyFontSize()">Apply Font Size</button>
+
+<p [style.fontSize.px]="fontSize">Modern college of Arts, Science and Commerce</p>

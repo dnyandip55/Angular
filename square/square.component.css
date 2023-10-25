@@ -1,0 +1,19 @@
+/* square.component.css */
+.square-div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
